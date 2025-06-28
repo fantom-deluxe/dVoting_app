@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-Voting App</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+</head>
+<body style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; text-align: center; margin: 0;">
+    <h1>Decentralized Voting</h1>
+    <p id="status">Connecting...</p>
+    <p>
+        <button onclick="voteCandidate(1)">Vote for Captain America</button>
+        <button onclick="voteCandidate(2)">Vote for Iron Man</button>
+    </p>
+    <script src="app.js"></script>
+
+    <h2>Vote Counts:</h2>
+    <p>Captain America (Candidate 1): <span id="votesCA">Loading...</span></p>
+    <p>Iron Man (Candidate 2): <span id="votesIM">Loading...</span></p>
+    <button onclick="refreshVoteCounts()">🔄 Refresh Vote Counts</button>
+
+    <h3>Use to Perform Attack</h3>
+    <button style="margin-top: 10px;" onclick="simulateGasGriefing(1)">Simulate Gas Griefing</button>
+    <button style="margin-top: 10px;" onclick="originalVoteWithNonce(1)">Vote with Valid Nonce (A)</button>
+    <button style="margin-top: 10px;" onclick="replayVoteWithStoredNonce(1)">Replay Vote with Same Nonce (B)</button>
+
+
+</body>
+</html>
+
