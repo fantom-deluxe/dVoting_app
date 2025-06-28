@@ -11,5 +11,5 @@ Developed a secure and tamper-proof online voting dApp using Ethereum blockchain
 - Technologies Used: Solidity, Ganache, Truffle, Ethereum, MetaMask, JavaScript.
 <br>
 
-**Contribution:** <br>
+**My Contribution:** <br>
 Contributed to the development of a decentralized voting (dVoting) application by assisting in designing the overall project architecture. Analyzed and understood Solidity smart contracts to identify and address potential security vulnerabilities, enhancing the application’s resistance to attacks such as double voting and unauthorized access.
